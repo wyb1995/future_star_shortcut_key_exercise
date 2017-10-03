@@ -2,10 +2,10 @@ spring:
   profiles:
     active: ${ACTIVE_PROFILE:local}
   application:
-    name: future_star
+    name: future_star_shortcut_key_exercise
 
   datasource:
-    url: jdbc:mysql://${DB_HOST:127.0.0.1}:3306/${DB_NAME:future_star}
+    url: jdbc:mysql://${DB_HOST:127.0.0.1}:3306/${DB_NAME:future_star_shortcut}
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:dev}
     driver-class-name: com.mysql.jdbc.Driver
