@@ -22,12 +22,16 @@ public class ShortcutServiceImpl implements ShortcutService {
     public ResponseShortcut getRandomOne() {
         Shortcut randomShortcut = shortcutRepository.findRandomOne();
         User randomUser = userRepository.findRandomOne();
-        ResponseShortcut responseShortcut = ResponseShortcut.builder()
+        return ResponseShortcut.builder()
                 .shortcutDescribe(randomShortcut.getShortcut_describe())
                 .shortcutId(randomShortcut.getId())
                 .userId(randomUser.getId())
                 .userName(randomUser.getName())
                 .build();
-        return responseShortcut;
+    }
+
+    @Override
+    public Shortcut getOne(String shortcutId) {
+        return shortcutRepository.findOne(shortcutId);
     }
 }
