@@ -1,0 +1,15 @@
+{
+  "presets": ["react", "es2015", "stage-0"],
+  "plugins": [
+    ["babel-plugin-module-alias", [
+      { "src": "./src/css", "expose": "css" },
+      { "src": "./src/img", "expose": "img" },
+      { "src": "./src/jsx", "expose": "jsx" },
+    ]]
+  ],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
+}
