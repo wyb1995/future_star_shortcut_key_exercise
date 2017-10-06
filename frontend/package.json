@@ -78,7 +78,6 @@
     "url-loader": "0.5.7",
     "webpack": "1.13.1",
     "html-webpack-plugin": "^2.15.0",
-    "jeet": "6.1.2",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.12.2"
   },

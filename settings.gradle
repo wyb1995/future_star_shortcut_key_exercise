@@ -1,2 +1,4 @@
-rootProject.name = 'future_star_shortcut_key_exercise'
+include 'frontend'
+include 'backend'
+
 
