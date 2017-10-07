@@ -1,7 +1,7 @@
 import express from 'express';
-import shortcutController from './shortcutController';
+import ShortcutController from './shortcutController';
 
 const router = express.Router();
-router.use('/shortcut', shortcutController);
+router.use('/shortcut', ShortcutController);
 
 export default router;
